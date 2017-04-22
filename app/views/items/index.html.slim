@@ -11,7 +11,7 @@ table
 
   tbody
     - @items.each do |item|
-      tr
+      tr id="item_#{item.id}"
         td = item.name
         td = item.done
         td = link_to 'Show', item
